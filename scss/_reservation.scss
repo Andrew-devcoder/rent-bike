@@ -1,0 +1,42 @@
+.reservation {
+    &__body {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        padding: 12px 14px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__arrow {
+        margin-bottom: 20px;
+    }
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 50px;
+        height: 50px;
+
+        border-radius: 50%;
+        border: 2px solid #017029;
+
+        &--transform {
+            transform: scale(-1, 1);
+        }
+    }
+
+    &__content {
+        text-align: center;
+    }
+}

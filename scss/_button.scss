@@ -8,7 +8,7 @@
     gap: 12px;
 
     border-radius: 8px;
-    border: 1px solid #767676;
+    // border: 1px solid #767676;
     background: linear-gradient(90deg, #252525 0%, #252525 100%);
 
     &__intro {
@@ -17,5 +17,15 @@
         font-style: normal;
         font-weight: 700;
         line-height: normal;
+    }
+
+    &__price {
+        text-transform: capitalize;
+        color: #fff;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        background: linear-gradient(90deg, #1ed760 0%, #017029 100%);
     }
 }
