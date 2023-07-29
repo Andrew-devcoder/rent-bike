@@ -1,0 +1,25 @@
+.footer {
+    margin-top: 50px;
+    min-height: 100px;
+    background-color: #252525;
+
+    color: #fff;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: -0.413px;
+
+    &__body {
+        padding: 20px 0;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    &__col {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+}
