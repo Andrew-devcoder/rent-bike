@@ -68,6 +68,14 @@
     box-shadow: 0 0 0 1px #595959;
     border-radius: 8px;
 
+    &--full-size {
+        width: 100%;
+
+        & th {
+            width: 25%;
+        }
+    }
+
     &__head {
         height: 60px;
         font-size: 20px;
