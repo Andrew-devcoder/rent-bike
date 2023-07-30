@@ -54,15 +54,18 @@
         font-style: normal;
         font-weight: 300;
         line-height: normal;
+    }
 
-        & span {
-            color: #595959;
-            font-family: Poppins;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 300;
-            line-height: normal;
-        }
+    &__new {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__old {
+        font-size: 16px;
+        text-decoration: line-through;
+        opacity: 0.8;
     }
 
     &__text {
@@ -73,9 +76,4 @@
         font-weight: 700;
         line-height: normal;
     }
-}
-
-.through {
-    font-size: 16px !important;
-    text-decoration: line-through;
 }
