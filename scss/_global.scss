@@ -3,6 +3,17 @@ body {
 }
 
 .container {
-    max-width: 390px;
     margin: 0 auto;
+
+    @media (max-width: 425px) {
+        max-width: 390px;
+    }
+
+    @media (max-width: 375px) {
+        max-width: 350px;
+    }
+
+    @media (max-width: 320px) {
+        max-width: 310px;
+    }
 }
