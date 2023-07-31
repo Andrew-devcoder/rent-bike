@@ -6,6 +6,6 @@ burgerButton.addEventListener("click", () => {
 });
 
 const swiper = new Swiper(".bike__swiper", {
-    slidesPerView: 2.3,
+    slidesPerView: 2,
     spaceBetween: 15,
 });
