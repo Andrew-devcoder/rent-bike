@@ -47,6 +47,8 @@
         justify-content: space-between;
 
         padding: 0 10px;
+
+        overflow: hidden;
     }
 
     &__available {
@@ -59,8 +61,15 @@
 
         color: #595959;
         font-family: Urbanist;
-        font-size: 8px;
+        font-size: 12px;
         font-weight: 400;
+
+        width: 120px;
+
+        /* Обрезка текста */
+        white-space: nowrap; // текст в одну строку
+        overflow: hidden; // скрывает все что выходит за зону контейнера
+        text-overflow: ellipsis; // заменяет скрытый текст на многоточие
     }
 
     &__price {
