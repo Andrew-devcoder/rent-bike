@@ -5,15 +5,15 @@ body {
 .container {
     margin: 0 auto;
 
-    @media (max-width: 425px) {
+    @media (max-width: 426px) {
         max-width: 390px;
     }
 
-    @media (max-width: 375px) {
+    @media (max-width: 376px) {
         max-width: 350px;
     }
 
-    @media (max-width: 320px) {
+    @media (max-width: 321px) {
         max-width: 310px;
     }
 }
