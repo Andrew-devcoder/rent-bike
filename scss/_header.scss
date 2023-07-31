@@ -1,4 +1,6 @@
 .header {
+    position: relative;
+
     &__body {
         display: flex;
         flex-direction: row;
@@ -31,4 +33,32 @@
     font-weight: 600;
     line-height: 55px;
     letter-spacing: -0.413px;
+}
+
+.menu-burger {
+    &__list {
+        position: absolute;
+        top: 75px;
+        left: -100%;
+
+        width: 100%;
+        padding: 10px;
+
+        background: #fff;
+        color: #000;
+
+        opacity: 0;
+        transition: all 0.3s ease;
+
+        z-index: 999;
+
+        & li {
+            padding: 5px 0;
+        }
+
+        &--active {
+            left: 0;
+            opacity: 1;
+        }
+    }
 }
