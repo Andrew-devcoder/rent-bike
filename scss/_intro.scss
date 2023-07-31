@@ -9,11 +9,20 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
+        align-items: end;
 
         border-radius: 9.641px;
         border: 0.904px solid #767676;
         background: #059e3c;
+    }
+
+    &__image {
+        box-sizing: border-box;
+        max-width: 44%;
+
+        & img {
+            max-width: 100%;
+        }
     }
 
     &__content {
