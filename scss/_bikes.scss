@@ -62,10 +62,11 @@
         font-size: 14px;
         font-weight: 400;
 
-        width: 120px;
-
-        overflow: hidden; // скрывает все что выходит за зону контейнера
-        text-overflow: ellipsis; // заменяет скрытый текст на многоточие
+        height: 3.1em;
+        text-overflow: -o-ellipsis-lastline;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
     }
 
     &__price {
