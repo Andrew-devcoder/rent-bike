@@ -6,10 +6,11 @@
     }
 
     &__img-wrapper {
-        padding: 50px 15px 30px;
+        padding: 0 0 30px;
 
         & img {
-            border-radius: 8px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
         }
     }
 
