@@ -1,4 +1,8 @@
 .bike {
+    &__swiper {
+        padding-bottom: 50px;
+    }
+
     &__card {
         position: relative;
         border-radius: 8px;
