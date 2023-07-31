@@ -52,17 +52,12 @@
     }
 
     &__available {
-        display: flex;
-
-        flex-direction: column;
-        justify-content: center;
-
         color: #595959;
         font-family: Urbanist;
         font-size: 14px;
         font-weight: 400;
 
-        height: 3.1em;
+        height: 3.1rem;
         text-overflow: -o-ellipsis-lastline;
         display: -webkit-box;
         -webkit-box-orient: vertical;
@@ -91,6 +86,6 @@
 
     &__button {
         box-sizing: border-box;
-        padding: 20px 10px;
+        padding: 20px 10px 10px;
     }
 }
