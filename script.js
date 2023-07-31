@@ -7,5 +7,5 @@ burgerButton.addEventListener("click", () => {
 
 const swiper = new Swiper(".bike__swiper", {
     slidesPerView: 2,
-    spaceBetween: 15,
+    // spaceBetween: 15,
 });
