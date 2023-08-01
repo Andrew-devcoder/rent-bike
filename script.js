@@ -5,38 +5,40 @@ burgerButton.addEventListener("click", () => {
     burgerMenuList.classList.toggle("menu-burger__list--active");
 });
 
-const mySwiperOne = new Swiper(".mySwiperOne", {
-    slidesPerView: 2,
+if (window.location.pathname.endsWith("index.html")) {
+    const mySwiperOne = new Swiper(".mySwiperOne", {
+        slidesPerView: 2,
 
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
 
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
 
-    scrollbar: {
-        el: ".swiper-scrollbar",
-    },
-});
+        scrollbar: {
+            el: ".swiper-scrollbar",
+        },
+    });
 
-const mySwiperTwo = new Swiper(".mySwiperTwo", {
-    slidesPerView: 2,
+    const mySwiperTwo = new Swiper(".mySwiperTwo", {
+        slidesPerView: 2,
 
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
 
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
 
-    scrollbar: {
-        el: ".swiper-scrollbar",
-    },
-});
+        scrollbar: {
+            el: ".swiper-scrollbar",
+        },
+    });
+}
