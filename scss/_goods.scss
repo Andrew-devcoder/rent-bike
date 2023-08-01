@@ -1,13 +1,18 @@
-.bike {
+.goods {
     &__swiper {
-        padding-bottom: 50px;
+        padding-bottom: 70px;
+    }
+
+    &__title {
+        padding: 20px;
+        font-size: 26px;
+        font-weight: 800;
+
+        text-transform: capitalize;
     }
 
     &__card {
         position: relative;
-
-        // border-radius: 8px;
-        // background: linear-gradient(332deg, #e4e4e4 0%, #d7d7d7 100%);
     }
 
     &__img-wrapper {
@@ -15,33 +20,6 @@
 
         & img {
             border-radius: 8px;
-        }
-    }
-
-    &__name {
-        position: absolute;
-        top: 10px;
-        left: 10px;
-
-        color: #595959;
-        font-size: 12px;
-        font-weight: 700;
-    }
-
-    &__version {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-
-        color: #575757;
-        font-size: 14px;
-        font-weight: 400;
-        text-align: right;
-
-        & span {
-            color: #575757;
-            font-size: 7px;
-            font-weight: 300;
         }
     }
 
@@ -67,7 +45,6 @@
 
     &__price {
         padding-right: 10px;
-        // padding-bottom: 10px;
         padding-top: 10px;
 
         color: #595959;
@@ -75,17 +52,18 @@
         font-size: 18px;
         font-style: normal;
         font-weight: 300;
-
-        & span {
-            color: #595959;
-            font-size: 7px;
-            font-style: normal;
-            font-weight: 300;
-        }
     }
 
     &__button {
         box-sizing: border-box;
         padding: 20px 10px 10px;
     }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    top: auto;
+    bottom: 20px;
+
+    color: blue;
 }

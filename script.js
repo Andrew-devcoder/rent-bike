@@ -5,7 +5,38 @@ burgerButton.addEventListener("click", () => {
     burgerMenuList.classList.toggle("menu-burger__list--active");
 });
 
-const swiper = new Swiper(".bike__swiper", {
+const swiperOne = new Swiper(".mySwiperOne", {
     slidesPerView: 2,
-    // spaceBetween: 15,
+
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+
+    scrollbar: {
+        el: ".swiper-scrollbar",
+    },
+});
+
+const swiperTwo = new Swiper(".mySwiperTwo", {
+    slidesPerView: 2,
+
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+
+    scrollbar: {
+        el: ".swiper-scrollbar",
+    },
 });
