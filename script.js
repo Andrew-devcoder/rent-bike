@@ -23,7 +23,7 @@ const mySwiperOne = new Swiper(".mySwiperOne", {
     },
 });
 
-let mySwiperTwo = new Swiper(".mySwiperTwo", {
+const mySwiperTwo = new Swiper(".mySwiperTwo", {
     slidesPerView: 2,
 
     pagination: {
