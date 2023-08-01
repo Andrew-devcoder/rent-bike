@@ -5,7 +5,26 @@ burgerButton.addEventListener("click", () => {
     burgerMenuList.classList.toggle("menu-burger__list--active");
 });
 
-if (window.location.pathname.endsWith("index.html")) {
+if (
+    window.location.pathname.endsWith("index.html") ||
+    window.location.pathname.includes("/rent-bike/")
+) {
+    const swiperIntro = new Swiper(".swiperIntro", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        centeredSlides: true,
+
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+
     const mySwiperOne = new Swiper(".mySwiperOne", {
         slidesPerView: 2,
 
@@ -39,22 +58,6 @@ if (window.location.pathname.endsWith("index.html")) {
 
         scrollbar: {
             el: ".swiper-scrollbar",
-        },
-    });
-
-    const swiperIntro = new Swiper(".swiperIntro", {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        centeredSlides: true,
-
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-        },
-
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
         },
     });
 }
