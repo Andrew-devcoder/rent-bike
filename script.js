@@ -5,7 +5,7 @@ burgerButton.addEventListener("click", () => {
     burgerMenuList.classList.toggle("menu-burger__list--active");
 });
 
-const swiperOne = new Swiper(".mySwiperOne", {
+let swiperOne = new Swiper(".mySwiperOne", {
     slidesPerView: 2,
 
     pagination: {
@@ -23,7 +23,7 @@ const swiperOne = new Swiper(".mySwiperOne", {
     },
 });
 
-const swiperTwo = new Swiper(".mySwiperTwo", {
+let swiperTwo = new Swiper(".mySwiperTwo", {
     slidesPerView: 2,
 
     pagination: {
