@@ -6,19 +6,25 @@
         max-width: 100%;
         height: 220px;
 
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: end;
-
         border-radius: 9.641px;
         border: 0.904px solid #767676;
         background: #059e3c;
     }
 
+    &__slide {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: end;
+
+        height: 100%;
+
+        box-sizing: border-box;
+    }
+
     &__image {
         box-sizing: border-box;
-        max-width: 44%;
+        max-width: 43%;
 
         & img {
             max-width: 100%;
@@ -65,4 +71,8 @@
         display: flex;
         justify-content: end;
     }
+}
+
+.intro .swiper-pagination-bullet-active {
+    background: #fff;
 }
