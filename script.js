@@ -21,7 +21,7 @@ if (
         speed: 2000,
 
         autoplay: {
-            delay: 2500,
+            delay: 4500,
             disableOnInteraction: false,
         },
 
