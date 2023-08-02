@@ -4,12 +4,12 @@
             "format": "compressed",
             "extensionName": ".min.css",
             "savePath": "/style/css"
-        },
-
-        {
-            "format": "expanded",
-            "extensionName": ".css",
-            "savePath": "/css"
         }
+
+        // {
+        //     "format": "expanded",
+        //     "extensionName": ".css",
+        //     "savePath": "/css"
+        // }
     ]
 }
