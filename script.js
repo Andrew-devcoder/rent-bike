@@ -14,6 +14,8 @@ if (
         spaceBetween: 30,
         centeredSlides: true,
 
+        speed: 2000,
+
         autoplay: {
             delay: 2500,
             disableOnInteraction: false,
