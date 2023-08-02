@@ -69,3 +69,10 @@ const changePlaceNavMobile = () => {
 };
 
 window.addEventListener("scroll", changePlaceNavMobile);
+
+document.addEventListener("click", (event) => {
+    if (!burgerMenu.contains(event.target)) {
+        burgerMenuList.classList.remove("menu-burger__list--active");
+        burgerMenuButton.classList.remove("menu-burger__button--active");
+    }
+});
