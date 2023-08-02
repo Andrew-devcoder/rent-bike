@@ -37,10 +37,6 @@ if (
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
-
-        // scrollbar: {
-        //     el: ".swiper-scrollbar",
-        // },
     });
 
     const mySwiperTwo = new Swiper(".mySwiperTwo", {
@@ -55,9 +51,5 @@ if (
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
-
-        // scrollbar: {
-        //     el: ".swiper-scrollbar",
-        // },
     });
 }
