@@ -1,10 +1,10 @@
 .goods {
     &__swiper {
-        padding-bottom: 70px;
+        padding-bottom: 65px;
     }
 
     &__title {
-        padding: 20px;
+        padding: 20px 0 10px 20px;
         font-size: 26px;
         font-weight: 800;
 
@@ -63,7 +63,12 @@
 .swiper-button-next,
 .swiper-button-prev {
     top: auto;
-    bottom: 20px;
+    bottom: 10px;
 
     color: blue;
 }
+
+// .swiper-button-next:after,
+// .swiper-button-prev:after {
+//     font-size: 30px;
+// }

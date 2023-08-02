@@ -35,17 +35,72 @@
     letter-spacing: -0.413px;
 }
 
+.icon {
+    height: 36px;
+}
+
 .menu-burger {
+    &__button {
+        width: 32px;
+        height: 21px;
+        position: relative;
+        z-index: 2;
+        overflow: hidden;
+
+        & span,
+        &::after,
+        &::before {
+            position: absolute;
+            left: 0;
+            height: 3px;
+            width: 100%;
+            transition: all 0.3s ease 0s;
+            background-color: black;
+            border-radius: 20px;
+        }
+
+        &::after,
+        &::before {
+            content: "";
+        }
+
+        &::before {
+            top: 0;
+        }
+
+        &::after {
+            bottom: 0;
+        }
+
+        & span {
+            top: 50%;
+            transform: scale(1) translate(0, -50%);
+        }
+
+        &--active {
+            & span {
+                transform: scale(0) translate(0, -50%);
+            }
+            &::before {
+                top: 50%;
+                transform: rotate(-45deg) translate(0, -50%);
+            }
+            &::after {
+                bottom: 50%;
+                transform: rotate(45deg) translate(0, 50%);
+            }
+        }
+    }
+
     &__list {
         position: absolute;
         top: 75px;
         left: -100%;
 
         width: 100%;
-        padding: 10px;
+        padding: 0px 20px 20px;
 
         background: #fff;
-        color: #000;
 
         opacity: 0;
         transition: all 0.3s ease;
@@ -53,7 +108,12 @@
         z-index: 999;
 
         & li {
-            padding: 5px 0;
+            padding: 10px 0;
+            text-transform: capitalize;
+
+            & a {
+                color: #000;
+            }
         }
 
         &--active {

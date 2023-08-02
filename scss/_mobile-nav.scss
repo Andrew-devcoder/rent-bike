@@ -1,6 +1,6 @@
 .nav-mobile {
     position: fixed;
-    bottom: 0;
+    bottom: -100px;
     left: 0;
 
     display: flex;
@@ -15,11 +15,17 @@
 
     z-index: 99;
 
+    transition: all 0.3s ease-in-out;
+
+    &--active {
+        bottom: 0;
+    }
+
     &__item {
         padding: 15px;
 
-        & svg {
-            fill: #fff;
+        & path {
+            stroke: #fff;
         }
     }
 }

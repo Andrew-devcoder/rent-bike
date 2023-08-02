@@ -1,8 +1,12 @@
-const burgerButton = document.querySelector(".menu-burger");
+const burgerMenu = document.querySelector(".menu-burger");
 const burgerMenuList = document.querySelector(".menu-burger__list");
+const burgerMenuButton = document.querySelector(".menu-burger__button");
 
-burgerButton.addEventListener("click", () => {
+const navMobile = document.querySelector(".nav-mobile");
+
+burgerMenu.addEventListener("click", () => {
     burgerMenuList.classList.toggle("menu-burger__list--active");
+    burgerMenuButton.classList.toggle("menu-burger__button--active");
 });
 
 if (
@@ -55,3 +59,13 @@ if (
         },
     });
 }
+
+const changePlaceNavMobile = () => {
+    if (window.pageXOffset > 80 || document.documentElement.scrollTop > 80) {
+        navMobile.classList.add("nav-mobile--active");
+    } else {
+        navMobile.classList.remove("nav-mobile--active");
+    }
+};
+
+window.addEventListener("scroll", changePlaceNavMobile);
